@@ -7,7 +7,7 @@ import appConfig from "../aws/config";
 import { loginSuccess, loginFailure, logOut } from '../actions'
 import { withAlert } from 'react-alert'
 
-class GoogleCallbackPage extends Component {
+class OneLoginCallbackPage extends Component {
   render() {
     // just redirect to '/' in both cases
     debugger;
@@ -65,4 +65,4 @@ function mapStateToProps(state) {
   return { user: state.user };
 }
 
-export default connect(mapStateToProps, { loginSuccess, loginFailure, logOut})(withAlert(GoogleCallbackPage));
+export default connect(mapStateToProps, { loginSuccess, loginFailure, logOut})(withAlert(OneLoginCallbackPage));
